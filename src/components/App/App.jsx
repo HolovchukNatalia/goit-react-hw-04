@@ -75,7 +75,9 @@ function App() {
       <SearchBar onSubmit={handleSubmit} />
       <Toaster position="top-right" reverseOrder={false} />
       {error && <ErrorMessage message={error} />}
-      {noResults && !loading && <div>No images found for this query.</div>}
+      {noResults && !loading && (
+        <ErrorMessage message="No images found for this query((" />
+      )}
       {images.length > 0 && (
         <>
           <ImageGallery gallery={images} openModal={openModal} />

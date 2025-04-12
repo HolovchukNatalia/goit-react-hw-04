@@ -4,7 +4,7 @@ import css from "./ErrorMessage.module.css";
 const ErrorMessage = ({ message }) => {
   return (
     <div>
-      <p className={css.messageError}>{message}</p>
+      <p className={css.message}>{message}</p>
     </div>
   );
 };
